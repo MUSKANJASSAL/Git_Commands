@@ -10,10 +10,10 @@
 
 | Command | Description |
 | ------- | ----------- |
-| `git status` | Check status |
+| `git status` | Returns the current state of a repository |
 | `git add [file-name.txt]` | Add a file to the staging area |
-| `git add -A` | Add all new and changed files to the staging area |
-| `git commit -m "[commit message]"` | Commit changes |
+| `git add .` | Add all new and changed files to the staging area |
+| `git commit -m "[commit message]"` | Commit changes Staging area -> Local repository. Each commit has a unique id. |
 | `git rm -r [file-name.txt]` | Remove a file (or folder) |
 
 ###  Branching & Merging
@@ -33,7 +33,7 @@
 | `git checkout -- [file-name.txt]` | Discard changes to a file |
 | `git merge [branch name]` | Merge a branch into the active branch |
 | `git merge [source branch] [target branch]` | Merge a branch into a target branch |
-| `git stash` | Stash changes in a dirty working directory |
+| `git stash` | Stash changes in a dirty working directory. To save changes made when they're not in a state to commit them to a repository. |
 | `git stash clear` | Remove all stashed entries |
 
 ### Sharing & Updating Projects
@@ -53,7 +53,7 @@
 
 | Command | Description |
 | ------- | ----------- |
-| `git log` | View changes |
+| `git log` | Gives conet and history of repository. View changes. |
 | `git log --summary` | View changes (detailed) |
 | `git log --oneline` | View changes (briefly) |
 | `git diff [source branch] [target branch]` | Preview changes before merging |
